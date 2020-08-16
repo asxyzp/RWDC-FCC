@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width initial-scale=1"/>
+        <title>Basic CSS - FreeCodeCamp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@800&display=swap" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+        <style>
+            header
+            {
+                background-color:#d3d3d3;
+                font-family:monospace;
+                text-align:center;
+                padding:20px;
+            }
+
+            //All h3 elements will have blue color
+            h3{color:maroon;}
+            .green-text{color:green;}
+            .thirtypx{font-size:30px;}
+            .ss-text{font-family:San-Serif;}
+            .m-text{font-family:monospace;}
+            .bpaaji-txt{font-family: 'Baloo Paaji 2', cursive;}
+            .comic-txt{font-family: 'Comic Neue',monospace;}
+            .resize{width:400px;}
+            .green-dash-border{border-color:green;border-style:dashed;border-width:5px;}
+            .red-solid-border{border-color:red;border-style:solid;border-width:3px;}
+            .rounded{border-radius:50%;}
+            .silver-background{background-color:silver;}
+            #qtext{font-family:'Quicksand';}
+            #ytext
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:yellow;
+                text-align:center;
+                font-weight:bold;
+                padding:10px;
+            }
+            #rtext
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:red;
+                text-align:center;
+                padding:20px;
+                margin:-15px;
+                color:white;
+            }
+            #btext
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:blue;
+                text-align:center;
+                padding:20px;
+                margin:-15px;
+                color:white;
+            }
+            #sq{margin-right:-265px;}
+            #cir{margin-left:-265px;}
+            #rtext1
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:red;
+                text-align:center;
+                padding:20px;
+                margin-top:40px;
+                margin-left:40px;
+                margin-bottom:20px;
+                margin-right:20px;
+                color:white;
+            }
+            #btext1
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:blue;
+                text-align:center;
+                padding-top:40px;
+                padding-right:40px;
+                padding-bottom:20px;
+                padding-left:20px;
+                margin:10px;
+                color:white;
+            }
+            #rtext2
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:red;
+                text-align:center;
+                padding:10px 20px 10px 20px;
+                margin:10px;
+                color:white;
+            }
+            #btext2
+            {
+                border-color:black;
+                border-style:solid;
+                border-width:5px;
+                background-color:blue;
+                text-align:center;
+                padding:10px
+                margin:40px 20px 20px 40px;
+                color:white;
+            }
+            input[type="radio"]{margin:20px 0px 20px 0px;}
+            p[id="hello"]{margin-top:1in;}
+            p[id="world"]{margin-bottom:10mm;}
+            .hw{margin-top:1.5em;}
+            .majama{margin-top:1.5em;}
+            .bw{background-color:#000000;color:#FFFFFF;}
+            .red-text {color: #FF0000;}
+            .green-text {color: #00FF00;}
+            .dodger-blue-text {color: #1E90FF;}
+            .orange-text {color: #FFA500;}
+            .fuchsia-text {color: #F0F;}
+            .cyan-text {color: #0FF;}
+            .otext{background-color:rgb(255,165,0);color:rgb(255,255,255);}
+            .orchid-text {color: rgb(218,112,214);}
+            .sienna-text {color: rgb(160,82,45);}
+            .div_bgc 
+            {
+                --divbg:magenta;
+                background-color:var(--divbg,yellow);
+            }
+            .hellow
+            {
+                --textc:white;
+                --textf:monospace;
+                color:var(--textc,black);
+                font-family:var(--textf,san-serif);
+            }
+            :root
+            {
+                --textc:#000000;
+                --textbg:yellow;
+                --text-color:white;
+                --text-bg:blue;
+            }
+            .mogomogo
+            {
+                background-color:var(--textbg,green);
+                color:var(--textc,white);
+            }
+            .list-color
+            {
+                background:blue;
+                background:var(--text-color);
+                color:white;
+                background:var(--text-bg);
+            }
+            @media (max-width:500px)
+            {
+                :root
+                {
+                    --textc:white;
+                    --textbg:blue;
+                }
+            }
+            .mogola
+            {
+                color:var(--textc,black);
+                background:var(--textbg,yellow);
+            }
+        </style>
+    </head>
+    <body style="font-family:monospace;">
+        <main>
+            <header style="text-align:center;">
+                <h1>Basic CSS</h1>
+                <h4>Completed by asxyzp(Aashish Loknath Panigrahi)  </h4>
+                <strong><a href="https://rwdc-fcc--asxyzp.repl.co">Go   to    main page</a></strong>
+            </header>
+
+            <!--Inline styling-->
+            <p>Changing the color of the text using inline styling:</p>
+            <h2>Hello world.</h2>
+            <h2 style="color:red;">Hello world (w/ red color).</h2><br>
+            
+            <!--Styling using <style>-->
+            <p>Changing the color of the text (using style tag):</p>
+            <h3>Hello world (w/ blue color).</h3>
+            <h3>All h3 elements will be of blue color.</h3><br>
+
+            <!--Styling using class-->
+            <p>Changing the color of the text (using class):</p>
+            <h4>Hello world.</h4>
+            <h4 class="green-text">This h4 element will be of green color.</h4>
+            <h4 class="green-text">Another h4 element w/ green color</h4><br>
+
+            <!--Changing font size!-->
+            <p>Changing font size :</p>
+            <p>Normal text</p>
+            <p class="thirtypx">Text w/ 30px font size</p><br>
+
+            <!--Changing font family-->
+            <p>Changing font family :</p>
+            <p>Normal text</p>
+            <p class="ss-text">San-Serif text</p>
+            <p class="m-text">Monospace text</p><br>
+            
+            <!--Using google fonts-->
+            <p>Using google fonts :</p>
+            <p>Normal text</p>
+            <p class="bpaaji-txt">Text w/ Baloo Paaji font</p><br>
+
+            <!--Understanding font degradation-->
+            <p>Understanding font degradation :</p>
+            <p>Normal text</p>
+            <p class="comic-txt">Text w/ font degraded to monospace</p>
+            <br>
+
+            <p>Changing size of image :</p>
+            <img src="https://bit.ly/fcc-relaxing-cat" alt="Original size"/><br>
+            <img src="https://bit.ly/fcc-relaxing-cat" class="resize" alt="Original size"/>
+            <br>
+
+            <p>Changing border style :</p>
+            <img src="https://bit.ly/fcc-relaxing-cat" class="red-solid-border" alt="Original size"/><br>
+            <img src="https://bit.ly/fcc-relaxing-cat" class="resize green-dash-border" alt="Original size"/>
+            <br>
+
+            <p>Changing border radius :</p>
+            <img src="https://bit.ly/fcc-relaxing-cat" class="red-solid-border" alt="Original size"/><br>
+            <img src="https://bit.ly/fcc-relaxing-cat" class="rounded resize green-dash-border" alt="Original size"/>
+            <br>
+
+            <p>Changing background color :</p>
+            <p>Text w/ default background</p>
+            <p class="silver-background">Text w/ silver background</p>
+            <br>
+
+            <p>Styling using id attribute :</p>
+            <p>Normal text</p>
+            <p id="qtext" class="m-text">Styled using id attribute</p>
+            <br>
+
+            <!--Understanding margin, padding & border-->
+            <p>Understanding margin & padding :</p>
+            <div id="ytext">
+                margin
+                <h5 id="rtext">padding</h5>
+                <h5 id="btext">padding</h5>
+            </div>
+            <br>
+
+            <p>Understanding negative margin (margin-right:-265px;) :</p>
+            <img id="sq" src="https://img.pngio.com/red-square-icon-free-red-shape-icons-red-square-png-256_256.png" width="20%"/>
+            <img  src="https://cdn.clipart.email/767ed78f43c50de22de75ea1463ee4e9_fileski-trail-rating-symbol-green-circlesvg-wikimedia-commons_240-240.png" width="20%"/>
+            <br>
+            
+            <p>Understanding negative margin (margin-left:-265px;) :</p>
+            <img src="https://img.pngio.com/red-square-icon-free-red-shape-icons-red-square-png-256_256.png" width="20%"/>
+            <img id="cir" src="https://cdn.clipart.email/767ed78f43c50de22de75ea1463ee4e9_fileski-trail-rating-symbol-green-circlesvg-wikimedia-commons_240-240.png" width="20%"/>
+            <br>
+            
+            <p>Understanding padding-bottom/-top/-right/-left :</p>
+            <div id="ytext">
+                margin
+                <h5 id="rtext1">padding</h5>
+                <h5 id="btext1">padding</h5>
+            </div>
+            <br>
+
+            <p>Understanding clockwise notation for padding & margin :</p>
+            <div id="ytext">
+                margin
+                <h5 id="rtext2">padding</h5>
+                <h5 id="btext2">padding</h5>
+            </div>
+            <br>
+
+            <p>styling using attribute selectors :</p>
+            <input type="radio">Hello<br>
+            <input type="checkbox">World<br>>
+
+            <p>Absolute units :</p>
+            <p id="hello">Hello</p>
+            <p id="world">World</p>
+            <p>Kemcho?</p>
+            <br>
+
+            <p>Relative units :</p>
+            <p class="thirtypx hw">Hello, world!</p>
+            <p>Kemcho?</p>
+            <p class="m-text majama">Majama?</p>
+            <br>
+
+            <p>Check <a href="CSSInheritanceOverride.html" target="_blank">CSS Inhertitance & overriding styles</a>.</p>
+            <br>
+
+            <p>Coloring using hex code :</p>
+            <h3 class="bw">Kemcho? Majama?</h3>
+            <h3 class="red-text">I am red!</h3>
+            <h3 class="green-text">I am green!</h3>
+            <h3 class="dodger-blue-text">I am dodger blue!</h3>
+            <h3 class="orange-text">I am orange!</h3>
+            <br>
+
+            <p>Coloring using abbreviated hex code :</p>
+            <h3 class="fuchsia-text">I am fuchsia!</h3>
+            <h3 class="cyan-text">I am cyan!</h3>
+            <br>
+
+            <p>Coloring using RGB values :</p>
+            <h3 class="otext">White text w/ orange background</h3>
+            <h3 class="orchid-text">Orchid text</h3>
+            <h3 class="sienna-text">Sienna text</h3>
+            <br>
+
+            <p>Using CSS variables to change element properties :</p>
+            <div class="div_bgc">
+                <h3 class="hellow">Hello, World!</h3>
+            </div>
+            <p>Variable declaration using :root (global scope) :</p>
+            <h3 class="mogomogo">I love Mogola Mogola</h3>
+            <br>
+
+            <p>Understanding CSS variable inheritance :</p>
+            <ul class="list-color">
+                <li>When a variable is selected, it's variables are also inherited.</li>
+                <li>CSS variables are inherited, similar to CSS properties</li>
+            </ul>
+            <br>
+
+            <p>Understanding media query (shrink window size to check the change):</p>
+            <p class="mogola">Mogola mogola</p>
+            <br>
+        </main>
+    </body>
+</html>

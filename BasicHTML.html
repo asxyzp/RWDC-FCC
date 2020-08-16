@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width initial-scale=1"/>
+    <title>Basic HTML - FreeCodeCamp</title>
+    <header style="font-family:monospace;text-align:center;">
+        <h1>Basic HTML & HTML5</h1>
+        <h4>Completed by asxyzp(Aashish Loknath Panigrahi)</h4>
+        <strong><a href="https://rwdc-fcc--asxyzp.repl.co">Go to main page</a></strong>
+    </header>
+    <style>
+        header
+        {
+            background-color:#d3d3d3;
+            font-family:monospace;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+
+    <!--Allows browser/search engine to find the main content of the page-->
+    <main style="font-family:monospace;">
+
+    <!--H1 is used for main heading-->
+    <h1 id="hw1">Hello World</h1>
+
+    <!--H2-H6 is used for main heading-->
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <!--Used for paragraph text-->
+    </p>This is a paragraph text</p>
+
+    <!--img tag is used for creating image-->
+    <!--alt attr is for accesibility of text, when image doesn't loads-->
+    <!--src attr is the source of the image-->
+    <img src="https://static.flickr.com/34/122530930_6e16f1eb5c.jpg" alt="Fat Cat"/><br>
+
+    <!--a/anchor tag is used for linking to another web page-->
+    <!--href attribute provides URL for the anchor-->
+    <a href="https://asxyzp.code.blog">My blog</a><br>
+
+    <!--target attribute specifies where to open the anchor-->
+    <!--'_blank' value of target attr specifies that page should open in new tab-->
+    <a href="https://asxyzp.code.blog" target="_blank">My blog (but it opens in a new tab)</a><br>
+
+    <!--'#id_name' value to a, opens internal link-->
+    <a href="#hw1">Go To Hello World (h1)</a>
+
+    <!--# value to a, specifies dead link-->
+    <p>This is a <a href="#">dead link</a></p>
+
+    <!--Image as a link-->
+    <p>The image below is a link :</p>
+    <a href="https://www.3blue1brown.com" target="_blank"><img  src="https://thumbs.gfycat.com/WateryCommonLeafbird-poster.jpg" width="70%"/></a>
+
+
+    <!--<ul> for unordered list-->
+    <!--<li> for list element-->
+    <strong><p>Things cat love :</p></strong>
+    <ul>
+      <li>Milk</li>
+      <li>Wool</li>
+      <li>Laser</li>
+    </ul>
+
+    <!--<ol> for ordered list-->
+    <!--<li> for list element-->
+    <strong><p>Things cats hate:</p></strong>
+    <ol>
+      <li>Dog</li>
+      <li>Another cat</li>
+      <li>Cucumbers</li>
+    </ol>
+
+    <!--<input> tag is used for accepting form inputs-->
+    <!--type='text' attr. & value is for text field of a form-->
+    <!--placeholder attr. places placeholder text in text field which is shown before user enters text-->
+    <!--<form> tag allows to submit data & action attr. specifies where the data will be submitted-->
+    <!--<button> w/ type="submit" submits form data to URL specified by action attr.-->    
+    <form action="/cat-photo-url">
+        <input type="text"  placeholder="cat photo URL" required/>
+        <!--RADIO-->
+        <label for="indoor">
+            <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>indoor
+        </label>
+        <label for="outdoor">
+            <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">outdoor
+        </label>
+        <!--CHKBOX-->
+        <label for="shy">
+            <input id="shy" value="shy" type="checkbox" name="personality" checked>shy
+        </label>
+        <label for="impulsive">
+            <input id="impulsive" value="impulsive" type="checkbox" name="personality">impulsive
+        </label>    
+        <label for="angry">
+            <input id="angry" value="angry" type="checkbox" name="personality">angry
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+    <!---->
+    </main>
+    <footer style="text-align:center;font-family:monospace;">
+        Created by asxyzp (Aashish Loknath Panigrahi)
+    </footer>
+</html>

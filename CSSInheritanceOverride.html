@@ -1,0 +1,40 @@
+<meta name="viewport" content="width=device-width initial-scale=1"/>
+<title>CSS Inheritance & overriding</title>
+
+<!--This is to prove that every HTML page has a body element,
+irrespective of whether it has been mentioned or not-->
+<style>
+  body {
+    background-color: black;
+    color:green;
+    font-family:monospace;
+  }
+  .yellow-text{color:yellow!important;}
+  .pink-text{color:pink;}
+  .white-text{color:white;}
+  #orange-text{color:orange;}
+</style>
+
+<!--Since every visible element is contained in body,
+so styling body tag, will lead to all child elements inheriting the property from the parent element (body)-->
+<h1>Hello World</h1>
+<p>Kemcho, Majama?</p>
+
+<!--Prioritizing on style over another-->
+<!--In case of conflicting styles b/w properties inherited by a child from parent & class/id styling-->
+<h2 class="pink-text">Halooooooooooooo.</h2>
+
+<!--
+    Prioritising one class's style over another class's style
+    In case of conflicting styles
+-->
+<h2 class="pink-text white-text">How are you?</h2>
+
+<!--styling using id selector will override styling using class selector-->
+<h1 id="orange-text" class="pink-text white-text">Sab kuch theek?</h1>
+
+<!--Inline styling will override class & id styling-->
+<h1 id="orange-text" class="pink-text blue-text" style="color:cyan;">Hello World!</h1>
+
+<!--!important will override all other class declaration-->
+<h3 id="orange-text" class="yellow-text blue-text" style="color:cyan;">Hello World!</h3>
