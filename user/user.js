@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	$(".asxyzp").click(function(){
+		$(".asxyzp").css("z-index","1");
+		$(".asxyzp_math").css("z-index","0");
+		$(".link").attr("href","https://twitter.com/asxyzp");
+		$(".link").html("@asxyzp");
+		$(".icon").attr("href","https://pbs.twimg.com/profile_images/1267310089435664384/_JiJQrH__400x400.jpg");
+	});
+	$(".asxyzp_math").click(function(){
+		$(".asxyzp").css("z-index","0");
+		$(".asxyzp_math").css("z-index","1");
+		$(".link").attr("href","https://twitter.com/asxyzp_math");
+		$(".link").html("@asxyzp_math");
+		$(".icon").attr("href","https://pbs.twimg.com/profile_images/1267310209778606080/I1Fvpo9d_400x400.jpg");
+	});
+});
