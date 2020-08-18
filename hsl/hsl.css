@@ -1,0 +1,45 @@
+.top-bar{
+	display: flex;
+	flex-direction: row;
+	margin:20px;
+}
+.hdiv{
+	width: 25%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.sdiv{
+	width:25%;
+	margin-right: 5%;
+}
+.ldiv{
+	width:25%;
+	margin-right: 5%;
+}
+
+div.color{
+	display: flex;
+	border-top: 1px solid #DDD;
+	width: 100%;
+}
+
+@media(max-width: 900px){
+	.top-bar{
+		flex-direction: column;
+	}
+	.hdiv{
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+	}
+	.sdiv{
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+	}
+	.ldiv{
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+	}
+}

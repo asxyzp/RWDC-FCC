@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HSL</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="hsl.css" rel="stylesheet" type="text/css"/>
+		<script src="https://kit.fontawesome.com/4d77ecffb7.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="hsl.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+	<body>
+		<div class="top-bar">
+			<div class="hdiv">
+				<label for="hue">Hue :</label>&nbsp;<span class="hop"></span>
+				<input type="range" id="hue" name="hue" class="hue form-control-range" min="0" max="359"/>
+			</div>
+			<div class="sdiv">
+				<label for="sat">Saturation :</label>&nbsp;<span class="sop"></span>
+				<input type="range" id="sat" name="sat" class="sat form-control-range" min="0" max="100"/>
+			</div>
+			<div class="ldiv">
+				<label for="lit">Lightness :</label>&nbsp;<span class="lop"></span>
+				<input type="range" id="lit" name="lit" class="lit form-control-range" min="0" max="100"/>
+			</div>
+		</div>
+		<div class="color"></div>
+	</body>
+</html>
