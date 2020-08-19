@@ -1,0 +1,28 @@
+.top-bar{
+	display: flex;
+	flex-direction: column;
+}
+.txt-box{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.text{
+	width:40%;
+	margin-right: 10px;
+}
+.txtop{
+	text-align:center;
+	padding:10px;
+}
+.range-box{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.range{
+	width: 40%;
+}
