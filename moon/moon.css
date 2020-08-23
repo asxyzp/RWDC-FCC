@@ -1,0 +1,22 @@
+.moon-bg{
+	background-color: #191970;
+	width: 100vw;
+	height: 100vh;
+
+	margin-top: -10px;
+	margin-bottom: -10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.moon{
+	background: url("https://i.pinimg.com/564x/06/ff/c8/06ffc8658488b63b89041cb300172d83.jpg");
+	background-position: center; 
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: -30px 10px #FDB813;
+	z-index: 1;
+}

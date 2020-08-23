@@ -1,0 +1,66 @@
+.top-bar{
+	padding:10px;
+}
+
+.text-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 5px;
+}
+
+.text{
+	width:50%;
+}
+
+.skewx-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	padding: 5px;
+}
+
+.skewy-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	padding: 5px;
+}
+
+
+.skewx{
+	width:70%;
+}
+
+.skewy{
+	width:70%;
+}
+
+.content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.box{
+	border: 5px solid #000;
+	box-shadow: 3px 3px #000;
+	
+	width:50vh;
+	height: 50vh;
+	
+	background: teal;
+	color: white;
+
+	font-weight: 900;
+	font-size: x-large;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
