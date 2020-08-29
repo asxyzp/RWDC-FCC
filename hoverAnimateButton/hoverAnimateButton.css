@@ -1,0 +1,26 @@
+.body-div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.btn-dark{
+	width: 80%;
+	border: 5px solid #000;
+	box-shadow: 3px 3px #000;
+}
+
+.btn-dark:hover{
+	animation-name: btn-animate;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes btn-animate {
+  0%   {background: linear-gradient(270deg, red, yellow);}
+  100% {background: linear-gradient(270deg, green, yellow);}
+}
