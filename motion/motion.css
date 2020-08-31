@@ -1,0 +1,76 @@
+.top-bar{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+.content-bar{
+	border-top: 3px solid #EEE;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn{
+	margin:5px;
+}
+
+.ball{
+	position: relative;
+	background-color: orange;
+	padding: 4%;
+	border-radius: 50%;
+	border: 5px solid #000;
+}
+
+.hor{
+	animation-name: hor;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hor {
+  0%   {left: 0%;}
+  25%  {left: 40%}
+  50%  {left: 0%;}
+  75%  {left: -40%;}
+  100% {left: 0%;}
+}
+
+.ver{
+	animation-name: ver;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes ver {
+  0%   {top: 0%;}
+  25%  {top: 40%}
+  50%  {top: 0%;}
+  75%  {top: -40%;}
+  100% {top: 0%;}
+}
+
+@media(max-width:690px){
+	.ball{padding:7%;}
+}
+
+.sin{
+	animation-name: sin;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes sin {
+  0%   {top: calc( 0*40%);		left:calc(100%*0);}
+  10%  {top: calc(-0.20*40%);	left:calc(100%*0.17364);}
+  20%  {top: calc(-0.40*40%);	left:calc(100%*0.34202);}
+  30%  {top: calc(-0.60*40%);	left:calc(100%*0.5);}
+  40%  {top: calc(-0.80*40%);	left:calc(100%*0.64278);}
+  50%  {top: calc(-0.100*40%);	left:calc(100%*0.768);}
+}
